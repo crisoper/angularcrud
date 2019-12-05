@@ -1,0 +1,28 @@
+<h1> Lista de obreros </h1>
+
+<div class="row">
+    <div class="col text-right">
+        <a routerLink="/obreros/crear"  routerLinkActive="active" class="nav-link">Nuevo</a>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+        <th>Codigo</th>
+        <th>DNI</th>
+        <th>Paterno</th>
+        <th>Materno</th>
+        <th>Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let obrero of obreros">
+        <td>{{ obrero.id }}</td>
+        <td>{{ obrero.dni }}</td>
+        <td>{{ obrero.paterno }}</td>
+        <td>{{ obrero.materno }}</td>
+        <td>{{ obrero.nombre }}</td>
+        </tr>
+    </tbody>
+</table>
