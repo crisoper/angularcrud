@@ -25,5 +25,13 @@ export class ObrerosService {
     return this.http.post(this.API_URL + 'createpersona.php', obrero, this.httpOptions );
   }
 
+  get( id:number ) {               
+    return this.http.get(this.API_URL + 'getpersona.php?id=' + id, this.httpOptions );
+  }
+
+  actualizar( obrero:Obrero ) {               
+    return this.http.post(this.API_URL + 'updatepersona.php', obrero, this.httpOptions );
+  }
+
 }
 

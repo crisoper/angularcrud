@@ -23,6 +23,10 @@ const routes: Routes = [
     component: FormobreroComponent
   },
   {
+    path: 'obreros/crear/:id',
+    component: FormobreroComponent
+  },
+  {
     path:'areas',
     component:AreasComponent
   },

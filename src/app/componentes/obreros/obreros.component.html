@@ -14,6 +14,7 @@
         <th>Paterno</th>
         <th>Materno</th>
         <th>Nombre</th>
+        <th></th>
         </tr>
     </thead>
     <tbody>
@@ -23,6 +24,7 @@
         <td>{{ obrero.paterno }}</td>
         <td>{{ obrero.materno }}</td>
         <td>{{ obrero.nombre }}</td>
+        <td><a routerLink="/obreros/crear/{{ obrero.id }}" class="btn btn-info">Editar</a></td>
         </tr>
     </tbody>
 </table>
